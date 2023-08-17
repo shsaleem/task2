@@ -24,6 +24,7 @@ const notesApi = createApi({
             method: "POST",
             body: {
               title: note,
+              id: new Date().getTime().toString(),
             },
           };
         },
