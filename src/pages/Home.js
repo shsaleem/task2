@@ -11,7 +11,7 @@ const Home = () => {
   if (isFetching) {
     content = <div>Loading...</div>;
   } else if (error) {
-    content = <div>Error Loading Albums</div>;
+    content = <div>Error Loading Notes</div>;
   } else {
     content = data.map((note) => {
       return <Note key={note.id} note={note} />;
