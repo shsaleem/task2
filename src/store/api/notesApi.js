@@ -18,10 +18,13 @@ const notesApi = createApi({
       }),
       addNote: builder.mutation({
         query: (note) => {
+          console.log(note);
           return {
             url: "/notes",
             method: "POST",
-            body: note,
+            body: {
+              title: note,
+            },
           };
         },
         invalidatesTags: ["Note"],

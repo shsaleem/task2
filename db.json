@@ -1,12 +1,20 @@
 {
   "notes": [
     {
-      "id": "1",
-      "text": "Sample note 1"
+      "title": "hello",
+      "id": "m36NdJ2"
     },
     {
-      "id": "2",
-      "text": "Sample note 2"
+      "title": "hi",
+      "id": "eLQoi7E"
+    },
+    {
+      "title": "react",
+      "id": "fvUqHuc"
+    },
+    {
+      "title": "node",
+      "id": "fo6DDx2"
     }
   ]
 }

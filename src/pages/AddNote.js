@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useAddNoteMutation } from "../store";
+import { useNavigate } from "react-router-dom";
 
 const AddNote = () => {
+  const navigate = useNavigate();
   const [noteText, setNoteText] = useState("");
   const [addNote] = useAddNoteMutation();
 
@@ -9,6 +11,7 @@ const AddNote = () => {
     e.preventDefault();
     addNote(noteText);
     setNoteText("");
+    navigate("/");
   };
 
   return (
